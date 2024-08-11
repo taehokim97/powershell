@@ -1,0 +1,2 @@
+# powershell
+🟦 Setup powershell
