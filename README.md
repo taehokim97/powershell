@@ -31,8 +31,8 @@ Set-PSReadLineOption -PredictionViewStyle ListView
 ```
 
 ### Fonts
+#### Windows Terminal
 ```json
-// Windows Terminal
  "profiles": 
     {
         "defaults": 
@@ -45,7 +45,7 @@ Set-PSReadLineOption -PredictionViewStyle ListView
    }
 ```
 
+#### VSCode
 ```json
-// VSCode
 "terminal.integrated.fontFamily": "MesloLGS NF, Consolas, 'Courier New', monospace"
 ```
