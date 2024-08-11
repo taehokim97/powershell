@@ -41,6 +41,13 @@
           "NameLength": 0
         },
         {
+          "type": "python",
+          "style": "plain",
+          "foreground": "#16c60c",
+          "background": "",
+          "template": " <#DDB15F>venv(</> {{ .Major }}.{{ .Minor }}<#DDB15F>)</>"
+        },
+        {
           "type": "git",
           "style": "plain",
           "background": "",
