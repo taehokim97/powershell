@@ -1,0 +1,77 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 2,
+  "final_space": true,
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "session",
+          "style": "plain",
+          "template": "@{{ .UserName }} ",
+          "background": "",
+          "foreground": "#E36464",
+          "Text": "",
+          "Duration": 0,
+          "NameLength": 0
+        },
+        {
+          "type": "text",
+          "style": "plain",
+          "template": "➜",
+          "background": "",
+          "foreground": "#62ED8B",
+          "Text": "",
+          "Duration": 0,
+          "NameLength": 0
+        },
+        {
+          "type": "path",
+          "style": "plain",
+          "template": " {{ .Path }}",
+          "properties": {
+            "style": "folder"
+          },
+          "background": "",
+          "foreground": "#56B6C2",
+          "Text": "",
+          "Duration": 0,
+          "NameLength": 0
+        },
+        {
+          "type": "git",
+          "style": "plain",
+          "background": "",
+          "foreground": "#D4AAFC",
+          "template": " <#DDB15F>git(</>{{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }}<#DDB15F>)</>",
+          "properties": {
+            "fetch_status": true,
+            "fetch_upstream_icon": true,
+            "untracked_modes": {
+              "/Users/user/Projects/oh-my-posh/": "no"
+            },
+            "source": "cli",
+            "mapped_branches": {
+              "feat/*": "🚀 ",
+              "feature/*": "🚀 ",
+              "bug/*": "🐛 "
+            },
+            "branch_icon": ""
+          }
+        },
+        {
+          "type": "status",
+          "style": "plain",
+          "template": " \uf119",
+          "background": "",
+          "foreground": "#DCB977",
+          "Text": "",
+          "Duration": 0,
+          "NameLength": 0
+        }
+      ]
+    }
+  ]
+}
